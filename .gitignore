@@ -1,3 +1,9 @@
+# Additional
+/Debug
+.cproject
+.project
+.settings/
+
 # Prerequisites
 *.d
 
@@ -30,3 +36,4 @@
 *.exe
 *.out
 *.app
+/Debug/
