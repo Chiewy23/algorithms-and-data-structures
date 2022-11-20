@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+#include "CustomVector.h"
+
 using namespace std;
 
 void vector_basics();
@@ -19,7 +21,14 @@ void two_dimensional_vector();
  */
 int main() {
 	//vector_basics();
-	two_dimensional_vector();
+	//two_dimensional_vector();
+	CustomVector<int> v;
+
+	v.push_back(1);
+	v.push_back(2);
+	v.push_back(3);
+	cout << v.size() << endl;
+	cout << v.capacity() << endl;
 
 	return 0;
 }
