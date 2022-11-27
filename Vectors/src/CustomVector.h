@@ -1,6 +1,8 @@
 #ifndef CUSTOMVECTOR_H_
 #define CUSTOMVECTOR_H_
 
+#include <algorithm>
+
 template<typename T>
 
 class CustomVector {
@@ -16,9 +18,7 @@ public:
 		arr = new T[maximum_size];
 	}
 
-	~CustomVector() {
-
-	}
+	~CustomVector() { }
 
 	void pop_back() {
 		arr[current_size] = 0;
